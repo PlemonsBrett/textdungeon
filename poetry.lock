@@ -1,0 +1,17 @@
+[[package]]
+name = "simple-chalk"
+version = "0.1.0"
+description = "A terminal string styling library"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.10"
+content-hash = "21a2874c44d551390a514dff3f701517eb22f5de5475e2fc8c4e5286f8cfc853"
+
+[metadata.files]
+simple-chalk = [
+    {file = "simple_chalk-0.1.0.tar.gz", hash = "sha256:d80f55993dfa040c1b55d2fbfb925e4fbb5798c2934601aa448ef4a192d84196"},
+]

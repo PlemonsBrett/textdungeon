@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "project_two"
+version = "0.1.0"
+description = ""
+authors = ["Brett Plemons <Brett.Plemons@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+start = "project_two.main:game_loop"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+simple-chalk = "^0.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,135 @@
+{
+  "Drawbridge": {
+    "moves": {
+      "go West": ["continue", "Gatehouse", "As you walk across the drawbridge towards the gatehouse, you feel an ominous wind waft over you, sending shivers down your spine."],
+      "go East": ["continue", "Leaving so soon, are we?"],
+      "go North": [
+        "continue",
+        "You run almost fall off the bridge, that could have been bad."
+      ],
+      "go South": [
+        "continue",
+        "You run almost fall off the bridge, that could have been bad."
+      ]
+    },
+    "description": "You are standing on a drawbridge. The drawbridge is lowered. You can see a gatehouse to the West.",
+    "items": [],
+    "enemies": []
+  },
+  "Gatehouse": {
+    "moves": {
+      "go West": [
+        "continue",
+        "You run into a wall, quite disastrously I might add. I hope no one was listening!"
+      ],
+      "go East": ["continue", "Drawbridge", "You feel some presence pulling you back towards the gatehouse, you narrowly break free and return to the drawbridge."],
+      "go North": ["continue", "Great Hall", "As you feel your way through the dark, you finally make it to the entry way of a great hall."],
+      "go South": [
+        "continue",
+        "You run into a wall, quite disastrously I might add. I hope no one was listening!"
+      ]
+    },
+    "description": "You are in a gatehouse. You notice a faint outline of what appears to be a door to the North. The rest of the area is dark and you can't see anything.",
+    "items": ["Umbra Crescent"],
+    "enemies": []
+  },
+  "Great Hall": {
+    "moves": {
+      "go West": ["continue", "Phylactery", "As you approach the doorway you begin to smell something foul, you continue on anyway."],
+      "go East": ["continue", "Apothecary", "You climb over the rubble of the entryway as you catch a glimpse of what appears to be an apothecary of sorts."],
+      "go North": ["continue", "Donjon", "As you reach the dark breezeway that appears endless, you can see in the distance what is perhaps a throne?"],
+      "go South": ["continue", "Gatehouse", "You know you came this way before, but something seems oddly unfamiliar."]
+    },
+    "description": "You are in a great hall. There is a large table in the center of the room. There appear to be halls and doors on all sides of the room. You hear an eerie sound coming from the East and a faint glow in the North East corner of the room.",
+    "items": ["Scepter of Sargeras"],
+    "enemies": []
+  },
+  "Phylactery": {
+    "moves": {
+      "go West": [
+        "continue",
+        "You run into a wall, quite disatrously I might add. I hope no one was listening!"
+      ],
+      "go East": ["continue", "Great Hall", "You rush back to the door, glad to be out of that foul stench!"],
+      "go North": [
+        "continue",
+        "You run into a wall, quite disatrously I might add. I hope no one was listening!"
+      ],
+      "go South": [
+        "continue",
+        "You run into a wall, quite disatrously I might add. I hope no one was listening!"
+      ]
+    },
+    "description": "You are in a room with a large stone sarcophagus in the center of the room against the far wall. The only way out, appears to be the way you came. You feel the pull of the phylactery and you feel a strange sensation in your chest.",
+    "items": ["Atiesh, Greatstaff of the Guardian"],
+    "enemies": []
+  },
+  "Apothecary": {
+    "moves": {
+      "go West": ["continue", "Great Hall", "Ugh, I have to climb over this rubble pile again!"],
+      "go East": [
+        "game over",
+        "You hear the sound of breaking glass as you step down. A frigid air fills the room, and you hear groaning... Seems you have summoned the Undead Alchemist! He throws a phial at your feet, as it crashes to the ground you are frozen solid almost immediately..."
+      ],
+      "go North": ["continue", "Battlement", "You climb up a crumbling stairway, I hope it doesn't fall or you might be stuck up there."],
+      "go South": [
+        "continue",
+        "You run into a wall, quite disatrously I might add. I hope no one was listening!"
+      ]
+    },
+    "description": "As you climb through the battered door, you arrive at a strange room full of phials and jars. It seems as though someone was here recently. Careful where you step.",
+    "items": ["Frostmourne, Blade of the Lich King"],
+    "enemies": ["Undead Alchemist"]
+  },
+  "Battlement": {
+    "moves": {
+      "go West": [
+        "continue",
+        "You almost fall off the Battlement wall! Be careful, else you might end up dead!"
+      ],
+      "go East": [
+        "continue",
+        "You almost fall off the Battlement wall! Be careful, else you might end up dead!"
+      ],
+      "go South": ["continue", "Apothecary", "Oh, this place again, its a wreck!"],
+      "go North": ["continue", "You hit a deadend, you can't go that way!"]
+    },
+    "description": "As you climb up to the battlement, you notice a large hole in the floor. You can see a large room below you. As you walk out a strange wind blows in from the east, almost as if trying to knock you off the battlement.",
+    "items": ["Thas'dorah, Legacy of the Windrunners"],
+    "enemies": []
+  },
+  "Donjon": {
+    "moves": {
+      "go West": [
+        "continue",
+        "You run into a wall, quite disatrously I might add. I hope no one was listening!"
+      ],
+      "go East": ["continue", "Drum Tower", "As you approach the door to the tower, you see arcane energies seeping out in the cracks of the door."],
+      "go South": ["continue", "Great Hall", "You return down the dark, damp corridor towards the great hall."],
+      "go North": [
+        "continue",
+        "You trip over a loose stone and fall! You hit your head on the stone floor and die! Just kidding! You did hit your head though..."
+      ]
+    },
+    "description": "As you enter the Donjon, you feel a strange sensation in your head. You feel a strange pull, as if something is trying to take control of you. You shouldn't linger here for long...",
+    "items": [],
+    "enemies": []
+  },
+  "Drum Tower": {
+    "moves": {
+      "go West": ["continue", "Donjon", "Remember what happened last time, are you sure you want to back there? Okay..."],
+      "go East": [
+        "continue",
+        "You run into a wall, quite disatrously I might add. I hope no one was listening!"
+      ],
+      "go North": ["continue", "You fall down a flight of stairs and die... Sorry, you didn't die, I should probably not say that..."],
+      "go South": [
+        "continue",
+        "You run into a wall, quite disatrously I might add. I hope no one was listening!"
+      ]
+    },
+    "description": "You enter the base of a tower. You can see a spiral staircase leading up to the top of the tower. You can also see a staircase that leads downward to the North.",
+    "items": ["Felo'malorn, Flamestrike of the Phoenix"],
+    "enemies": []
+  }
+}
