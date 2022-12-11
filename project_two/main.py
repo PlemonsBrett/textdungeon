@@ -103,9 +103,8 @@ class Game:
         print("Your movement commands are:", end=" ")
         print(*self.available_moves, sep=", ")
         print('You may leave at any time by typing: "exit"')
-        # TODO: Add instructions for adding items to inventory
-        # print('You may search a room with the command: "search"')
-        # print('To add an item to your inventory: "get item name"')
+        print('You may search a room with the command: "search"')
+        print('To add an item to your inventory: "get item name"')
 
     def get_description(self):
         """
@@ -120,6 +119,12 @@ class Game:
         Adds the item from the current_room to the current_inventory
         :return: Updated inventory state
         """
+        print(
+            success(
+                f'You pick up {self.game_map[self.current_room]["items"][0]}'
+                f"and gently shove it into your pack."
+            )
+        )
         self.current_inventory.append(self.game_map[self.current_room]["items"][0])
 
     def search(self):
@@ -131,7 +136,7 @@ class Game:
         room_items = self.game_map[self.current_room]["items"]
         if len(room_items) != 0:
             print(success(f"You found {room_items[0]}!"))
-            print(success(f'Collect it by using move "get {room_items[0].split()[0]}'))
+            print(success(f'Collect it by using move "get {room_items[0]}"'))
         else:
             print(
                 standard(
@@ -146,7 +151,9 @@ class Game:
         :return: Updated room state, or a message
         """
         room = self.game_map[self.current_room]
-        if move.lower() in [i.lower() for i in self.available_moves]:
+        if move.lower() in [
+            move_element.lower() for move_element in self.available_moves
+        ]:
             self.current_state = room["moves"][move][0]
             if room["moves"][move][1] in self.available_rooms:
                 next_room = room["moves"][move][1]
@@ -224,8 +231,7 @@ class Game:
         else:
             self.print_instructions()
             print(standard(f"{self.get_description()}\n"))
-            # TODO: Show user their current inventory
-            # print(standard(f'Current inventory: {game.current_inventory}'))
+            print(standard(f"Current inventory: {self.current_inventory}"))
             print("-" * 25)
             move = input("Enter your move: ")
             # Check if the user entered an invalid input, or no input

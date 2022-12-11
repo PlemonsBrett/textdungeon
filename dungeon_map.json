@@ -48,16 +48,16 @@
     "moves": {
       "go West": [
         "continue",
-        "You run into a wall, quite disatrously I might add. I hope no one was listening!"
+        "You run into a wall, quite disastrously I might add. I hope no one was listening!"
       ],
       "go East": ["continue", "Great Hall", "You rush back to the door, glad to be out of that foul stench!"],
       "go North": [
         "continue",
-        "You run into a wall, quite disatrously I might add. I hope no one was listening!"
+        "You run into a wall, quite disastrously I might add. I hope no one was listening!"
       ],
       "go South": [
         "continue",
-        "You run into a wall, quite disatrously I might add. I hope no one was listening!"
+        "You run into a wall, quite disastrously I might add. I hope no one was listening!"
       ]
     },
     "description": "You are in a room with a large stone sarcophagus in the center of the room against the far wall. The only way out, appears to be the way you came. You feel the pull of the phylactery and you feel a strange sensation in your chest.",
@@ -74,7 +74,7 @@
       "go North": ["continue", "Battlement", "You climb up a crumbling stairway, I hope it doesn't fall or you might be stuck up there."],
       "go South": [
         "continue",
-        "You run into a wall, quite disatrously I might add. I hope no one was listening!"
+        "You run into a wall, quite disastrously I might add. I hope no one was listening!"
       ]
     },
     "description": "As you climb through the battered door, you arrive at a strange room full of phials and jars. It seems as though someone was here recently. Careful where you step.",
@@ -92,7 +92,7 @@
         "You almost fall off the Battlement wall! Be careful, else you might end up dead!"
       ],
       "go South": ["continue", "Apothecary", "Oh, this place again, its a wreck!"],
-      "go North": ["continue", "You hit a deadend, you can't go that way!"]
+      "go North": ["continue", "You hit a dead end, you can't go that way!"]
     },
     "description": "As you climb up to the battlement, you notice a large hole in the floor. You can see a large room below you. As you walk out a strange wind blows in from the east, almost as if trying to knock you off the battlement.",
     "items": ["Thas'dorah, Legacy of the Windrunners"],
@@ -102,7 +102,7 @@
     "moves": {
       "go West": [
         "continue",
-        "You run into a wall, quite disatrously I might add. I hope no one was listening!"
+        "You run into a wall, quite disastrously I might add. I hope no one was listening!"
       ],
       "go East": ["continue", "Drum Tower", "As you approach the door to the tower, you see arcane energies seeping out in the cracks of the door."],
       "go South": ["continue", "Great Hall", "You return down the dark, damp corridor towards the great hall."],
@@ -120,12 +120,12 @@
       "go West": ["continue", "Donjon", "Remember what happened last time, are you sure you want to back there? Okay..."],
       "go East": [
         "continue",
-        "You run into a wall, quite disatrously I might add. I hope no one was listening!"
+        "You run into a wall, quite disastrously I might add. I hope no one was listening!"
       ],
       "go North": ["continue", "You fall down a flight of stairs and die... Sorry, you didn't die, I should probably not say that..."],
       "go South": [
         "continue",
-        "You run into a wall, quite disatrously I might add. I hope no one was listening!"
+        "You run into a wall, quite disastrously I might add. I hope no one was listening!"
       ]
     },
     "description": "You enter the base of a tower. You can see a spiral staircase leading up to the top of the tower. You can also see a staircase that leads downward to the North.",
